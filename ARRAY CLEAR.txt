@@ -1,0 +1,14 @@
+// Array clear
+string[] pallets2 = { "B14", "A11", "B12", "A13" };
+Console.WriteLine($"Before: {pallets2[0].ToLower()}");
+Array.Clear(pallets2, 0, 2);
+if (pallets2[0] != null)
+{
+    Console.WriteLine($"After: {pallets2[0].ToLower()}");
+}
+
+Console.WriteLine($"Clearing 2 ... count: {pallets2.Length}");
+foreach (var pallet in pallets2)
+{
+    Console.WriteLine($"-- {pallet}");
+}
